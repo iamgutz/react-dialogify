@@ -1,5 +1,5 @@
 {
-  "extends": "airbnb-base",
+  "extends": "airbnb",
   "parser": "babel-eslint",
   "plugins": [
     "import",
@@ -10,7 +10,10 @@
     "browser": true
   },
   "rules": {
+    "operator-linebreak": 0,
     "react/jsx-uses-vars": 2,
-    "react/jsx-uses-react": 1
+    "react/jsx-uses-react": 1,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-wrap-multilines": 0
   }
 }
