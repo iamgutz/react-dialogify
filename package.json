@@ -1,10 +1,12 @@
 {
-  "name": "react-global-dialog",
+  "name": "react-dialogify",
   "version": "1.0.0",
   "description": "Simple, Fast and Easy to use Dialog Modal component for React",
   "main": "dist/index.js",
   "devDependencies": {
+    "@babel/cli": "^7.2.0",
     "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
@@ -44,7 +46,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamgutz/react-global-dialog.git"
+    "url": "git+https://github.com/iamgutz/react-dialogify.git"
   },
   "keywords": [
     "React",
@@ -59,18 +61,15 @@
   "author": "Michael Gutierrez",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iamgutz/react-global-dialog/issues"
+    "url": "https://github.com/iamgutz/react-dialogify/issues"
   },
-  "homepage": "https://github.com/iamgutz/react-global-dialog#readme",
+  "homepage": "https://github.com/iamgutz/react-dialogify#readme",
   "dependencies": {
-    "@babel/cli": "^7.2.0",
-    "@babel/plugin-transform-runtime": "^7.2.0",
     "fbemitter": "^2.1.1",
     "lodash": "^4.17.11",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-feather": "^1.1.4",
-    "styled-components": "^4.1.3",
-    "web-redux-socket": "^1.0.11"
+    "styled-components": "^4.1.3"
   }
 }
