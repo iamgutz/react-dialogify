@@ -3,3 +3,5 @@ src
 .eslintignore
 .eslintrc
 .DS_Store
+.storybook
+stories
