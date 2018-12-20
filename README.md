@@ -1,1 +1,1 @@
-# React Global Dialog
+# React Dialogify
