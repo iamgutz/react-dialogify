@@ -45,8 +45,8 @@ function () {
       this.eventEmitter.emit(_constants.ACTIONS.SHOW, options, templateComponent);
     }
   }, {
-    key: "hide",
-    value: function hide() {
+    key: "close",
+    value: function close() {
       this.eventEmitter.emit(_constants.ACTIONS.HIDE, null);
     }
   }]);

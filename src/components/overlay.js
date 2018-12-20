@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const Overlay = styled.div`
   display: flex;
-  flex-direction: row;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -18,8 +17,8 @@ const Overlay = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: ${({ bgColor }) => bgColor || '#fff'};
-    opacity: ${({ opacity }) => opacity || '0.5'};
+    background-color: ${({ bgColor }) => bgColor || '#000'};
+    opacity: ${({ opacity }) => opacity || '0.7'};
     z-index: 0;
   }
 `;

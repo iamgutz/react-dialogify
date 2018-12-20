@@ -18,7 +18,7 @@ class Dialog {
     this.eventEmitter.emit(ACTIONS.SHOW, options, templateComponent);
   }
 
-  hide() {
+  close() {
     this.eventEmitter.emit(ACTIONS.HIDE, null);
   }
 }

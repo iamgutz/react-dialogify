@@ -11,8 +11,10 @@ var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/hel
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
+var _constants = require("../constants");
+
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2.default)(["\n  display: inline-flex;\n  background-color: #fff;\n  color: #000;\n  border-radius: 8px;\n  z-index: 1;\n  width: 100%;\n  max-width: 40rem;\n  margin: 1rem;\n"]);
+  var data = (0, _taggedTemplateLiteral2.default)(["\n  font-size: ", ";\n  font-family: Verdana;\n  font-weight: 400;\n  margin-bottom: 2rem;\n  color: ", ";\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -21,7 +23,7 @@ function _templateObject() {
   return data;
 }
 
-var Box = _styledComponents.default.div(_templateObject());
+var Text = _styledComponents.default.div(_templateObject(), _constants.FONT_SIZES.MEDIUM, _constants.COLORS.DARK_GREY);
 
-var _default = Box;
+var _default = Text;
 exports.default = _default;

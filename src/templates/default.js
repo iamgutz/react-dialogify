@@ -1,31 +1,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import Icon from '../components/icon';
+import Button from '../components/button';
+import Text from '../components/text';
+import Title from '../components/title';
+import { STATUS } from '../constants';
 
 const DefaultTemplate = ({
-  title, text, ctaText, ctaOnClick,
+  status, title, text, ctaText, ctaOnClick,
 }) => (
-  <div>
-    <div>
-      {title}
-    </div>
-    <div>
-      {text &&
-        <div>
-          <div>
-            {text}
-          </div>
-        </div>
-      }
-      {ctaText && ctaOnClick &&
-        <button onClick={ctaOnClick} type="button">
-          {ctaText}
-        </button>
-      }
-    </div>
-  </div>
+  <TemplateBase>
+    <Icon status={status} />
+    {title &&
+      <Title>{title}</Title>
+    }
+    {text &&
+      <Text>
+        {text}
+      </Text>
+    }
+    {ctaText && ctaOnClick &&
+      <Button status={status} onClick={ctaOnClick} type="button">
+        {ctaText}
+      </Button>
+    }
+  </TemplateBase>
 );
 
 DefaultTemplate.propTypes = {
+  status: PropTypes.oneOf(Object.values(STATUS)),
   title: PropTypes.string,
   text: PropTypes.string,
   ctaText: PropTypes.string,
@@ -33,6 +37,7 @@ DefaultTemplate.propTypes = {
 };
 
 DefaultTemplate.defaultProps = {
+  status: null,
   title: null,
   text: null,
   ctaText: null,
@@ -40,3 +45,13 @@ DefaultTemplate.defaultProps = {
 };
 
 export default DefaultTemplate;
+
+const TemplateBase = styled.div`
+  position: relative;
+  padding: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;

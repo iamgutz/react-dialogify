@@ -1,18 +1,34 @@
-import React from 'react';
 import _isString from 'lodash/isString';
-import DefaultTemplate from './templates/default';
-import { TEMPLATE_NAMES } from './constants';
+import Check from 'react-feather/dist/icons/check';
+import X from 'react-feather/dist/icons/x';
+import Clock from 'react-feather/dist/icons/clock';
+import Heart from 'react-feather/dist/icons/heart';
+import { STATUS, COLORS } from './constants';
 
-export const TEMPLATES = {
-  [TEMPLATE_NAMES.default]: DefaultTemplate,
+export const ICONS = {
+  [STATUS.success]: Check,
+  [STATUS.error]: X,
+  [STATUS.pending]: Clock,
+  default: Heart,
 };
 
-export const getTemplate = (template, currentTemplate) => {
-  if (_isString(template)) {
-    return TEMPLATES[template] || TEMPLATES[TEMPLATE_NAMES.default];
+export const getIcon = (status) => {
+  if (_isString(status)) {
+    return ICONS[status] || ICONS.default;
   }
-  if (template && React.isValidElement(<template />)) {
-    return template;
+  return null;
+};
+
+export const STATUS_COLORS = {
+  [STATUS.success]: COLORS.GREEN,
+  [STATUS.error]: COLORS.RED,
+  [STATUS.pending]: COLORS.GOLD,
+  default: COLORS.PINK,
+};
+
+export const getStatusColor = (status) => {
+  if (_isString(status)) {
+    return STATUS_COLORS[status] || STATUS_COLORS.default;
   }
-  return currentTemplate || TEMPLATES[TEMPLATE_NAMES.default];
+  return null;
 };

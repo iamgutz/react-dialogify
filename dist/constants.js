@@ -3,20 +3,33 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.TEMPLATE_NAMES = exports.TYPES = exports.ACTIONS = void 0;
+exports.FONT_SIZES = exports.COLORS = exports.STATUS = exports.ACTIONS = void 0;
 var ACTIONS = {
   HIDE: 'HIDE_DIALOG',
   SHOW: 'SHOW_DIALOG'
 };
 exports.ACTIONS = ACTIONS;
-var TYPES = {
+var STATUS = {
   success: 'success',
   error: 'error',
-  normal: 'normal'
+  pending: 'pending'
 };
-exports.TYPES = TYPES;
-var TEMPLATE_NAMES = {
-  wave: 'wave',
-  default: 'default'
+exports.STATUS = STATUS;
+var COLORS = {
+  GREEN: '#71C341',
+  RED: '#c14141',
+  GOLD: '#c19f41',
+  PINK: '#bf41c1',
+  WHITE: '#fff',
+  DARK_GREY: '#323530',
+  GREY: '#c6c6c6'
 };
-exports.TEMPLATE_NAMES = TEMPLATE_NAMES;
+exports.COLORS = COLORS;
+var FONT_SIZES = {
+  XSMALL: '0.5rem',
+  SMALL: '0.8rem',
+  MEDIUM: '1rem',
+  LARGE: '1.5rem',
+  XLARGE: '2rem'
+};
+exports.FONT_SIZES = FONT_SIZES;
