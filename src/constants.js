@@ -7,6 +7,8 @@ export const STATUS = {
   success: 'success',
   error: 'error',
   pending: 'pending',
+  warning: 'warning',
+  info: 'info',
 };
 
 export const COLORS = {
@@ -17,6 +19,8 @@ export const COLORS = {
   WHITE: '#fff',
   DARK_GREY: '#323530',
   GREY: '#c6c6c6',
+  TUSSOCK: '#c18241',
+  INDIGO: '#417ac1',
 };
 
 export const FONT_SIZES = {

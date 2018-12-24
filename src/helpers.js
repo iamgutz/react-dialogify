@@ -2,14 +2,17 @@ import _isString from 'lodash/isString';
 import Check from 'react-feather/dist/icons/check';
 import X from 'react-feather/dist/icons/x';
 import Clock from 'react-feather/dist/icons/clock';
-import Heart from 'react-feather/dist/icons/heart';
+import AlertTriangle from 'react-feather/dist/icons/alert-triangle';
+import Rss from 'react-feather/dist/icons/rss';
 import { STATUS, COLORS } from './constants';
 
 export const ICONS = {
   [STATUS.success]: Check,
   [STATUS.error]: X,
   [STATUS.pending]: Clock,
-  default: Heart,
+  [STATUS.warning]: AlertTriangle,
+  [STATUS.info]: Rss,
+  default: null,
 };
 
 export const getIcon = (status) => {
@@ -22,7 +25,9 @@ export const getIcon = (status) => {
 export const STATUS_COLORS = {
   [STATUS.success]: COLORS.GREEN,
   [STATUS.error]: COLORS.RED,
-  [STATUS.pending]: COLORS.GOLD,
+  [STATUS.pending]: COLORS.TUSSOCK,
+  [STATUS.warning]: COLORS.GOLD,
+  [STATUS.info]: COLORS.INDIGO,
   default: COLORS.PINK,
 };
 
