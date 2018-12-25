@@ -5,13 +5,13 @@ import Icon from '../components/icon';
 import Button from '../components/button';
 import Text from '../components/text';
 import Title from '../components/title';
-import { STATUS } from '../constants';
+import { TYPES } from '../constants';
 
 const DefaultTemplate = ({
-  status, title, text, ctaText, ctaOnClick,
+  type, title, text, ctaText, ctaOnClick,
 }) => (
   <TemplateBase>
-    <Icon status={status} />
+    <Icon type={type} />
     {title &&
       <Title>{title}</Title>
     }
@@ -21,7 +21,7 @@ const DefaultTemplate = ({
       </Text>
     }
     {ctaText && ctaOnClick &&
-      <Button status={status} onClick={ctaOnClick} type="button">
+      <Button status={type} onClick={ctaOnClick} type="button">
         {ctaText}
       </Button>
     }
@@ -29,7 +29,7 @@ const DefaultTemplate = ({
 );
 
 DefaultTemplate.propTypes = {
-  status: PropTypes.oneOf(Object.values(STATUS)),
+  type: PropTypes.oneOf(Object.values(TYPES)),
   title: PropTypes.string,
   text: PropTypes.string,
   ctaText: PropTypes.string,
@@ -37,7 +37,7 @@ DefaultTemplate.propTypes = {
 };
 
 DefaultTemplate.defaultProps = {
-  status: null,
+  type: null,
   title: null,
   text: null,
   ctaText: null,

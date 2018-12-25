@@ -3,7 +3,7 @@ export const ACTIONS = {
   SHOW: 'SHOW_DIALOG',
 };
 
-export const STATUS = {
+export const TYPES = {
   success: 'success',
   error: 'error',
   pending: 'pending',
@@ -21,6 +21,7 @@ export const COLORS = {
   GREY: '#c6c6c6',
   TUSSOCK: '#c18241',
   INDIGO: '#417ac1',
+  KEPPEL: '#349a9a',
 };
 
 export const FONT_SIZES = {

@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { STATUS, COLORS } from '../constants';
-import { getIcon, getStatusColor } from '../helpers';
+import { TYPES, COLORS } from '../constants';
+import { getIcon, getTypeColor } from '../helpers';
 
-const Icon = ({ status }) => {
-  const IconComponent = getIcon(status);
+const Icon = ({ type }) => {
+  const IconComponent = getIcon(type);
   return IconComponent
-    ? (<Wrap status={status}><IconComponent color={COLORS.WHITE} /></Wrap>)
+    ? (<Wrap type={type}><IconComponent color={COLORS.WHITE} /></Wrap>)
     : null;
 };
 
 Icon.propTypes = {
-  status: PropTypes.oneOf(Object.values(STATUS)),
+  type: PropTypes.oneOf(Object.values(TYPES)),
 };
 
 Icon.defaultProps = {
-  status: null,
+  type: null,
 };
 
 export default Icon;
@@ -34,5 +34,5 @@ const Wrap = styled.div`
   left: 0;
   right: 0;
   border: 2px solid ${COLORS.WHITE};
-  background: ${({ status }) => getStatusColor(status) || COLORS.WHITE};
+  background: ${({ type }) => getTypeColor(type) || COLORS.WHITE};
 `;

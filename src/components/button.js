@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { getStatusColor } from '../helpers';
+import { getTypeColor } from '../helpers';
 import { COLORS, FONT_SIZES } from '../constants';
 
 const Button = styled.button`
-  background: ${({ status }) => getStatusColor(status) || COLORS.GREY};
+  background: ${({ status }) => getTypeColor(status) || COLORS.GREY};
   color: ${({ status }) => (status ? COLORS.WHITE : COLORS.DARK_GREY)};
   border: none;
   padding: 1rem;
