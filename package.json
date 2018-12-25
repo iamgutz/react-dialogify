@@ -1,6 +1,6 @@
 {
   "name": "react-dialogify",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Simple, Fast and Easy to use Dialog Modal component for React",
   "main": "dist/index.js",
   "engines": {
