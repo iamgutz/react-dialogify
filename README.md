@@ -6,7 +6,7 @@
 
 React-Dialogify allows you to add dialogs to your app, fast and easy.
 
-![screen shot](https://raw.githubusercontent.com/iamgutz/react-ddialogify/master/screenshots/dialogify-sample.png)
+![screen shot](https://raw.githubusercontent.com/iamgutz/react-dialogify/master/screenshots/dialogify-sample.png)
 
 ## Features
 * Super fast setup - Plug & Play.
