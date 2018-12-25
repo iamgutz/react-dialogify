@@ -39,8 +39,8 @@ const showWarning = () => {
 };
 const showInfo = () => {
   dialog.info({
-    title: 'News! Some tips!',
-    text: 'Read this! This dialog shows you some useful info!',
+    title: 'React Dialogify!',
+    text: 'React dialogs made easy and fast! Like magic ;)',
     btnText: 'Close me now!',
     btnOnClick() { dialog.close(); },
   });
