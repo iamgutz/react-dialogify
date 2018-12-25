@@ -9,7 +9,7 @@ React-Dialogify allows you to add dialogs to your app, fast and easy.
 ## Features
 * Super fast setup - Plug & Play.
 * Customizable - Use with predefined styles or use your own.
-* Programmatically controlled - With a couple of functions you can make it show/hide from anywhere in your app.
+* Programmatically controlled - With a couple of functions you can make it show/close from anywhere in your app.
 * No Redux/State required - Don't need to set Actions or States in your App to control it.
 
 ## Installation
@@ -124,3 +124,11 @@ render() {
   );
 }
 ```
+
+# Demo
+You want to see some examples? Easy, follow this steps:
+
+* Clone this Repo https://github.com/iamgutz/react-dialogify
+* Install dependencies, run `yarn` or `npm install`
+* Run Storybook `yarn storybook` or `npm run storybook`
+* It will open your browser with the storybook examples
